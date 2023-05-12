@@ -1,0 +1,14 @@
+-e .
+flask
+flask_restful
+flask_httpauth
+flask-Pydantic
+webargs
+marshmallow
+requests
+black
+google-auth
+flask-cors
+pyjwt
+
+selenium

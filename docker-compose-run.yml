@@ -1,0 +1,17 @@
+version: "2.4"
+
+services:
+  selenium:
+    image: selenium/standalone-chrome
+    ports:
+      - 4444:4444
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:5005
+    entrypoint: /bin/bash -l -c
+    command: >
+      "python my_flask_api/api.py"
